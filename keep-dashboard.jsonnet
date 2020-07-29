@@ -11,6 +11,7 @@ local template = grafana.template;
   grafanaDashboards:: {
     keep_dashboard: dashboard.new(
       'KEEP Node Dashboard',
+      description='KEEP node monitoring dashboard that uses both native node metrics and kubernetes exporters',
       tags=['keep', 'blockchain'],
     )
     .addTemplate(
